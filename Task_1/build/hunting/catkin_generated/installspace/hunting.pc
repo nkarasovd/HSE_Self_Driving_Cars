@@ -1,0 +1,8 @@
+prefix=/home/nikolay/Task_1/install
+
+Name: hunting
+Description: Description of hunting
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
