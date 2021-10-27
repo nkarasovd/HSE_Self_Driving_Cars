@@ -17,3 +17,7 @@ roslaunch laser_scanner_processing.launch
 rosrun rviz rviz -d rviz_config.rviz
 rosbag play 2011-01-25-06-29-26.bag
 ```
+
+## Example
+
+![](data/example.gif)
