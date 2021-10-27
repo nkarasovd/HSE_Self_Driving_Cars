@@ -63,6 +63,14 @@ Visualization Manager:
       Unreliable: false
       Use Timestamp: false
       Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: visualization_marker
+      Name: Marker
+      Namespaces:
+        "": true
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -107,9 +115,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6053981184959412
+      Pitch: 1.435397982597351
       Target Frame: <Fixed Frame>
-      Yaw: 1.6053978204727173
+      Yaw: 1.555397868156433
     Saved: ~
 Window Geometry:
   Displays:
@@ -127,5 +135,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1267
-  X: 638
-  Y: 432
+  X: 72
+  Y: 329

@@ -16,7 +16,7 @@ class LaserScannProcessing:
 		# grid params
 		self.radius = radius
 		self.resolution = resolution
-		self.grid_size = 2 * int(self.radius / self.resolution) + 5
+		self.grid_size = 2 * int(self.radius / self.resolution) + 1
 		
 		# filter threshold
 		self.eps = eps
@@ -87,7 +87,7 @@ class LaserScannProcessing:
 		grid.info.height = self.grid_size
 		
 		grid.info.origin.position.x = -self.radius
-		grid.info.origin.position.x = -self.radius
+		grid.info.origin.position.y = -self.radius
 		grid.info.origin.position.z = 0
 		
 		data = np.zeros((self.grid_size, self.grid_size), dtype=int)
@@ -97,8 +97,8 @@ class LaserScannProcessing:
 				i = int((x + self.radius) / self.resolution)
 				j = int((y + self.radius) / self.resolution)
 				data[j, i] = 100
-				
-		grid.data = data.flatten()
+		data = data.flatten()		
+		grid.data = data
 		
 		return grid
 		
@@ -113,7 +113,7 @@ class LaserScannProcessing:
 		valid_y = [y_lst[i] for i in valid_indices]
 		
 		marker = self._create_marker()
-		marker.points = [Point(x, y, 1.0) for x, y, in zip(valid_x, valid_y)]
+		marker.points = [Point(x, y, 0) for x, y, in zip(valid_x, valid_y)]
 		self.marker_publisher.publish(marker)
 		
 		grid = self._create_grid(valid_x, valid_y)
