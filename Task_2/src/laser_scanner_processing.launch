@@ -1,0 +1,3 @@
+<launch>
+	<node pkg='task_2' type='laser_scann_processing.py' name='laser_scann_code'/>
+</launch>

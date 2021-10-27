@@ -1,0 +1,2 @@
+task_2
+-DCATKIN_DEVEL_PREFIX=/home/nikolay/Task_2/devel -DCMAKE_INSTALL_PREFIX=/home/nikolay/Task_2/install -G Unix Makefiles
