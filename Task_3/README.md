@@ -1,6 +1,6 @@
 # Duckietown
 
-### [Task 1](part_1.py)
+### [Part 1](part_1.py)
 
 - Остановиться перед уточкой. 
 
@@ -11,7 +11,7 @@
 ![](data/record_01.gif)
 
 
-### [Task 2](part_2.py)
+### [Part 2](part_2.py)
 
 - Объехать уточку и остановиться.
 
